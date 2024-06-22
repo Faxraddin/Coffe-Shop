@@ -4,8 +4,8 @@ import Navbar from "../Layout/Navbar";
 
 const Product = ({src,name,price}) => {
   return(
-    <div className="border flex sm:p-2 mt-7 relative flex-col justify-end sm:h-[250px] h-[300px] items-center text-center p-5 w-[250px] sm:w-[160px] rounded-[30px]">
-      <Image className="sm:w-[100px] h-auto absolute w-[140px] -top-7" src={`/${src}`} width={2000} height={2000} alt="product"/>
+    <div className="border flex sm:p-2 mt-7 relative flex-col justify-end sm:h-[250px] h-[300px] items-center text-center p-5 w-[240px] sm:w-[160px] rounded-[30px]">
+      <Image className="sm:w-[100px] hover:scale-110 transition-all ease-linear duration-200 h-auto absolute w-[140px] -top-7" src={`/${src}`} width={2000} height={2000} alt="product"/>
       <div>
         <span className="font-light text-[14px]">Blend</span>
         <h1 className="font-bold text-[20px]">{name}</h1>
@@ -53,11 +53,19 @@ const HomePage = () => {
           </div>
         </div>
       </section>
-      <section className="w-full border flex flex-col snap-start h-screen">
-
+      <section className="w-full flex flex-col snap-start h-screen">
+        <div className="w-full h-auto flex justify-center items-center">
+          <div className="bg-[#f4e0dd] relative  top-20 flex justify-start lg:gap-2 gap-40 items-center lg:p-[5vw] p-10 rounded-[30px] w-[90%] h-[auto]">
+            <div className="w-[400px] flex flex-col gap-5">
+              <h1 className="text-[40px] lg:text-[5vw] font-extrabold text-[#371406]">Check out out best coffee beans</h1>
+              <button className="bg-[#371406] md:py-4 transition-all ease-linear duration-300 border hover:bg-white hover:border-[#371406] hover:text-[#371406] rounded-[35px] font-bold text-white text-[20px] lg:w-[34vw] lg:text-[2.3vw] py-5 w-[310px]">Explore our products now!</button>
+            </div>
+            <Image alt="beans" src={'/Beans.png'} width={2000} height={2000} className="w-[400px] lg:w-[40vw] lg:relative lg:top-0 lg:right-0 right-40 2lg:right-3 absolute -top-14 h-auto"/>
+          </div>
+        </div>
       </section>
     </div>
-  );
+  ); 
 };
 
 export default HomePage;
