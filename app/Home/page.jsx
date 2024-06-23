@@ -84,7 +84,7 @@ const HomePage = () => {
       </section>
 
       <section className="w-full flex flex-col snap-start lg:h-auto lg:mt-20 h-auto">
-        <div className="w-full h-full flex justify-between 2lg:justify-start 2lg:items-start gap-5 2lg:flex-col items-center">
+        <div className="w-full h-full py-20 sm:pt-10 flex justify-between 2lg:justify-start 2lg:items-start gap-5 2lg:flex-col items-center">
           <Image alt="beans2" src={'/Beans2.png'} width={2000} height={2000} className="h-[70%] pointer-events-none sm:w-full sm:mt-10 2lg:h-auto 2lg:w-[50%] relative 2lg:left-0 w-[auto]"/>
           <div className="flex 2lg:w-full 2lg:text-center 2lg:justify-center justify-center text-left pr-10 flex-col items-center gap-5 h-auto w-[55%]">
             <h1 className="text-[3.3vw] sm:hidden text-[#371406] md:text-[4vw] font-normal">We care about the quality of our <span className="font-extrabold">products</span></h1>
