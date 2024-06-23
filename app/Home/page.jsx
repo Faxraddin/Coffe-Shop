@@ -1,7 +1,10 @@
+'use client'
+
 import React from "react";
 import Image from "next/image";
 import Navbar from "../Layout/Navbar";
 import Footer from "../Layout/Footer";
+import { motion } from "framer-motion";
 
 const Product = ({src,name,price}) => {
   return(
@@ -30,7 +33,7 @@ const Product2 = ({src,name,price,selected}) => {
 
 const HomePage = () => {
   return (
-    <div className="w-full overflow-x-hidden h-screen overflow-y-scroll snap-y snap-mandatory">
+    <motion.div initial={{opacity:0}} animate={{opacity:1}} transition={{delay:2.5,duration:1.2}} className="w-full overflow-x-hidden h-screen overflow-y-scroll snap-y snap-mandatory">
       <section className="flex snap-start 2lg:h-auto sm:h-auto justify-center 2lg:gap-3 gap-20 flex-col items-center w-full h-screen">
         <Navbar />
         <div className="2lg:flex-col 2lg:text-center w-[90%] relative h-full flex justify-between items-center">
@@ -95,7 +98,7 @@ const HomePage = () => {
         </div>
         <Footer/>
       </section>
-    </div>
+    </motion.div>
   ); 
 };
 
