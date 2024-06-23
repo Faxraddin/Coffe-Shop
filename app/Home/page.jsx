@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Navbar from "../Layout/Navbar";
+import Footer from "../Layout/Footer";
 
 const Product = ({src,name,price}) => {
   return(
@@ -82,7 +83,7 @@ const HomePage = () => {
         </div>
       </section>
 
-      <section className="w-full flex flex-col snap-start  sm:h-[screen] 2lg:h-auto h-screen">
+      <section className="w-full flex flex-col snap-start  sm:h-[screen] 2lg:h-auto h-auto">
         <div className="w-full h-full flex justify-between 2lg:justify-start 2lg:items-start gap-5 2lg:flex-col items-center">
           <Image alt="beans2" src={'/Beans2.png'} width={2000} height={2000} className="h-[70%] sm:mt-10 2lg:h-auto 2lg:w-[50%] relative 2lg:left-0 w-[auto]"/>
           <div className="flex 2lg:w-full 2lg:text-center 2lg:justify-center justify-center text-left pr-10 flex-col items-center gap-5 h-auto w-[55%]">
@@ -92,6 +93,7 @@ const HomePage = () => {
             <button className="bg-[#371406] md:py-3 transition-all ease-linear duration-300 border sm:ml-10 hover:bg-white hover:border-[#371406] hover:text-[#371406] rounded-[35px] font-bold text-white md:text-[17px] sm:w-[90%] text-[20px] py-5 w-[300px]">Explore our products now!</button>
           </div>
         </div>
+        <Footer/>
       </section>
     </div>
   ); 
