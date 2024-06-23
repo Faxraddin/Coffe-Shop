@@ -35,7 +35,7 @@ const HomePage = () => {
         <Navbar />
         <div className="2lg:flex-col 2lg:text-center w-[90%] relative h-full flex justify-between items-center">
           <div className="h-full 2lg:w-[100%] sm:justify-center sm:gap-7 2lg:items-center big:justify-center flex big:-mt-40 flex-col gap-5 w-[55%]">
-            <Image width={2000} height={2000} className="w-[37vw] sm:w-[250px] 2lg:w-[60vw] h-auto" alt="HeroImg" src={'/HeroText.png'} />
+            <Image width={2000} height={2000} className="w-[37vw] pointer-events-none sm:w-[250px] 2lg:w-[60vw] h-auto" alt="HeroImg" src={'/HeroText.png'} />
             <h1 className="text-[60px] md:text-[8vw] font-extrabold text-[#371406]">An Online Coffee Shop</h1>
             <p>Straight to your doorstep. We don't roast our beans until we have your order. Every ore trusted the slipped the some auy.</p>
             <button className="bg-[#371406] md:py-4 transition-all ease-linear duration-300 border hover:bg-white hover:border-[#371406] hover:text-[#371406] rounded-[35px] font-bold text-white text-[20px] py-5 w-[310px]">Explore our products now!</button>
@@ -45,15 +45,15 @@ const HomePage = () => {
               <span className="flex px-7 flex-col sm:px-3 text-[18px] justify-center sm:text-[15px] items-center font-light">Total sales <h3 className="font-bold text-[#371406] sm:text-[20px] text-[33px]">340k+</h3></span>
             </div>
           </div>
-          <Image alt="cup" src={'/Cup.png'} width={2000} height={2000} className="2lg:relative 2lg:hidden 2lg:top-0 2lg:right-0 w-[45vw] absolute -right-24 big:top-24 -top-[5vw] h-auto" />
-          <Image alt="cup2" src={'/Cup2.png'} width={2000} height={2000} className="2lg:relative sm:w-[250px] hidden 2lg:flex 2lg:top-0 2lg:right-0 w-[45vw] absolute -right-24 -top-[5vw] h-auto" />
+          <Image alt="cup" src={'/Cup.png'} width={2000} height={2000} className="2lg:relative pointer-events-none 2lg:hidden 2lg:top-0 2lg:right-0 w-[45vw] absolute -right-24 big:top-24 -top-[5vw] h-auto" />
+          <Image alt="cup2" src={'/Cup2.png'} width={2000} height={2000} className="2lg:relative pointer-events-none sm:w-[250px] hidden 2lg:flex 2lg:top-0 2lg:right-0 w-[45vw] absolute -right-24 -top-[5vw] h-auto" />
         </div>
       </section>
 
       <section className="w-full flex flex-col snap-start h-screen 2lg:h-auto sm:h-auto">
-        <Image width={2000} height={2000} className="w-[100%] h-auto" alt="Line" src={'/Line.png'} />
+        <Image width={2000} height={2000} className="w-[100%] h-auto pointer-events-none" alt="Line" src={'/Line.png'} />
         <div className="w-full h-full flex gap-4 justify-center flex-col items-center">
-          <Image width={2000} height={2000} className="w-[50px] h-auto" alt="Point" src={'/Point.png'} />
+          <Image width={2000} height={2000} className="w-[50px] h-auto pointer-events-none" alt="Point" src={'/Point.png'} />
           <div className="flex w-[95%] gap-3 text-[#371406] flex-col text-center">
             <h1 className="text-[40px] md:text-[8vw] font-bold">Explore the recent products</h1>
             <h2 className="text-[17px] sm:px-3 font-light">Our delectable drink options, includino classic espresso choices, house soeciolties, truit smoothies and frozen treats.</h2>
@@ -73,7 +73,7 @@ const HomePage = () => {
               <h1 className="text-[40px] lg:text-[5vw] font-extrabold text-[#371406]">Check out out best coffee beans</h1>
               <button className="bg-[#371406] md:py-4 transition-all ease-linear duration-300 border hover:bg-white hover:border-[#371406] hover:text-[#371406] rounded-[35px] font-bold text-white text-[20px] lg:w-[34vw] lg:text-[2.3vw] py-5 w-[310px]">Explore our products now!</button>
             </div>
-            <Image alt="beans" src={'/Beans.png'} width={2000} height={2000} className="w-[400px] lg:w-[40vw] lg:relative lg:top-0 lg:right-0 right-40 2lg:right-3 absolute -top-10 h-auto"/>
+            <Image alt="beans" src={'/Beans.png'} width={2000} height={2000} className="w-[400px] pointer-events-none lg:w-[40vw] lg:relative lg:top-0 lg:right-0 right-40 2lg:right-3 absolute -top-10 h-auto"/>
           </div>
           <div className="w-[90%] h-[100%] md:gap-0 md:justify-center flex md:flex-col justify-around gap-3 items-center">
             <Product2 src={'I2.png'} selected={false} name={'Miele CM6 Carafe'} price={'$12'}/>
@@ -85,11 +85,11 @@ const HomePage = () => {
 
       <section className="w-full flex flex-col snap-start lg:h-auto lg:mt-20 h-auto">
         <div className="w-full h-full flex justify-between 2lg:justify-start 2lg:items-start gap-5 2lg:flex-col items-center">
-          <Image alt="beans2" src={'/Beans2.png'} width={2000} height={2000} className="h-[70%] sm:w-full sm:mt-10 2lg:h-auto 2lg:w-[50%] relative 2lg:left-0 w-[auto]"/>
+          <Image alt="beans2" src={'/Beans2.png'} width={2000} height={2000} className="h-[70%] pointer-events-none sm:w-full sm:mt-10 2lg:h-auto 2lg:w-[50%] relative 2lg:left-0 w-[auto]"/>
           <div className="flex 2lg:w-full 2lg:text-center 2lg:justify-center justify-center text-left pr-10 flex-col items-center gap-5 h-auto w-[55%]">
             <h1 className="text-[3.3vw] sm:hidden text-[#371406] md:text-[4vw] font-normal">We care about the quality of our <span className="font-extrabold">products</span></h1>
             <p className="text-[1.2vw] sm:hidden text-[#371406] md:text-[2vw] font-light">Drinkine cottee is one ef the mest clobel thinas wou de each dows here i can spend a long and comfortable time with this workspace tacilities</p>
-            <Image alt="what" className="w-full 2lg:pl-10 sm:pl-5 h-auto" width={2000} height={2000} src={'/What.png'}/>
+            <Image alt="what" className="w-full 2lg:pl-10 sm:pl-5 h-auto pointer-events-none" width={2000} height={2000} src={'/What.png'}/>
             <button className="bg-[#371406] sm:hidden md:py-3 transition-all ease-linear duration-300 border sm:ml-10 hover:bg-white hover:border-[#371406] hover:text-[#371406] rounded-[35px] font-bold text-white md:text-[17px] sm:w-[90%] text-[20px] py-5 w-[300px]">Explore our products now!</button>
           </div>
         </div>
