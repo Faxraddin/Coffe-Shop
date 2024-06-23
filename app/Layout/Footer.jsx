@@ -13,7 +13,7 @@ const Footer = () => {
         <div className="flex lg:flex-col lg:gap-10 justify-between">
           <div className="mb-0">
             <a href="/" className="flex items-center gap-1">
-              <h1 className={`sm:gap-2 flex cursor-pointer justify-center items-center gap-3 text-white text-[23px] font-extralight`}><Image onClick={() => { router.push('/') }} src={'/logo.png'} width={2000} className="w-[80px] rounded-full h-auto relative bottom-1" priority={true} height={2000} alt="logo" />COFFEO</h1>
+              <h1 className={`sm:gap-2 flex cursor-pointer justify-center items-center gap-3 text-white text-[23px] font-extralight`}><Image onClick={() => { router.push('/') }} src={'/Logo.png'} width={2000} className="w-[80px] rounded-full h-auto relative bottom-1" priority={true} height={2000} alt="logo" />COFFEO</h1>
             </a>
           </div>
           <div className="grid gap-8 xs:grid-cols-1 lg:grid-cols-2 lg:gap-20 sm:gap-6 grid-cols-2">
