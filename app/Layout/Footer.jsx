@@ -9,7 +9,7 @@ import { IoLogoWhatsapp } from "react-icons/io";
 const Footer = () => {
   return (
     <footer className="lg:mx-5 mt-10 Font lg:mb-5 mb-10 mx-10">
-      <div className="mx-auto bg-[#848d8f] rounded-[20px] w-[100%] max-w-screen-xl md:pl-5 md:y-5 p-14 py-9">
+      <div className="mx-auto bg-[#371406ce] rounded-[20px] w-[100%] max-w-screen-xl md:pl-5 md:y-5 p-14 py-9">
         <div className="flex lg:flex-col lg:gap-10 justify-between">
           <div className="mb-0">
             <a href="/" className="flex items-center gap-1">
