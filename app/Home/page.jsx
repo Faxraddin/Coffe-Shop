@@ -15,9 +15,21 @@ const Product = ({src,name,price}) => {
   )
 }
 
+const Product2 = ({src,name,price,selected}) => {
+  return(
+    <div className={`border ${selected?'bg-white':''} md:w-full flex mt-7 md:justify-between sm:h-[auto] md:h-auto relative flex-col justify-end h-[330px] items-center text-center p-5 w-[30%] md:p-3 rounded-[30px]`}>
+      <Image className="md:w-[120px] sm:w-[15vw] xs:w-[25vw] hover:scale-110 transition-all ease-linear md:relative duration-200 h-auto absolute w-[160px] top-0" src={`/${src}`} width={2000} height={2000} alt="product"/>
+      <div className="md:w-full md:flex md:flex-col md:justify-center md:gap-2 md:h-full md:text-center">
+        <p className="font-light md:text-[4.6vw] text-[21px]">{name}</p>
+        <h1 className="font-bold text-[20px]">{price}</h1>
+      </div>
+    </div>
+  )
+}
+
 const HomePage = () => {
   return (
-    <div className="w-full h-screen overflow-y-scroll snap-y snap-mandatory">
+    <div className="w-full overflow-x-hidden h-screen overflow-y-scroll snap-y snap-mandatory">
       <section className="flex snap-start 2lg:h-auto sm:h-screen justify-center 2lg:gap-3 gap-20 flex-col items-center w-full h-screen">
         <Navbar />
         <div className="2lg:flex-col 2lg:text-center w-[90%] relative h-full flex justify-between items-center">
@@ -53,16 +65,25 @@ const HomePage = () => {
           </div>
         </div>
       </section>
-      <section className="w-full flex flex-col snap-start h-screen">
-        <div className="w-full h-auto flex justify-center items-center">
-          <div className="bg-[#f4e0dd] relative  top-20 flex justify-start lg:gap-2 gap-40 items-center lg:p-[5vw] p-10 rounded-[30px] w-[90%] h-[auto]">
+      <section className="w-full flex flex-col snap-start md:h-[auto] h-screen">
+        <div className="w-full h-full flex-col flex justify-between items-center">
+          <div className="bg-[#f4e0dd] relative flex mt-14 sm:mt-5 justify-start lg:gap-2 gap-40 items-center lg:p-[5vw] p-10 rounded-[30px] w-[90%] h-[auto]">
             <div className="w-[400px] flex flex-col gap-5">
               <h1 className="text-[40px] lg:text-[5vw] font-extrabold text-[#371406]">Check out out best coffee beans</h1>
               <button className="bg-[#371406] md:py-4 transition-all ease-linear duration-300 border hover:bg-white hover:border-[#371406] hover:text-[#371406] rounded-[35px] font-bold text-white text-[20px] lg:w-[34vw] lg:text-[2.3vw] py-5 w-[310px]">Explore our products now!</button>
             </div>
-            <Image alt="beans" src={'/Beans.png'} width={2000} height={2000} className="w-[400px] lg:w-[40vw] lg:relative lg:top-0 lg:right-0 right-40 2lg:right-3 absolute -top-14 h-auto"/>
+            <Image alt="beans" src={'/Beans.png'} width={2000} height={2000} className="w-[400px] lg:w-[40vw] lg:relative lg:top-0 lg:right-0 right-40 2lg:right-3 absolute -top-10 h-auto"/>
+          </div>
+          <div className="w-[90%] h-[100%] md:gap-0 md:justify-center flex md:flex-col justify-around gap-3 items-center">
+            <Product2 src={'I2.png'} selected={false} name={'Miele CM6 Carafe'} price={'$12'}/>
+            <Product2 src={'I1.png'} selected={true} name={'NEw. Ember cup'} price={'$6.48'}/>
+            <Product2 src={'I3.png'} selected={false} name={'Espro P3 French Press'} price={'$5.52'}/>
           </div>
         </div>
+      </section>
+
+      <section className="w-full flex flex-col snap-start h-screen">
+
       </section>
     </div>
   ); 
