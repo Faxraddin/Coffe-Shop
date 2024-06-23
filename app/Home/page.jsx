@@ -5,7 +5,7 @@ import Footer from "../Layout/Footer";
 
 const Product = ({src,name,price}) => {
   return(
-    <div className="border flex sm:p-2 mt-7 relative flex-col justify-end sm:h-[250px] h-[300px] items-center text-center p-5 w-[240px] sm:w-[160px] rounded-[30px]">
+    <div className="border hover:bg-white ease-linear transition-all duration-150 hover:border-black flex sm:p-2 mt-7 relative flex-col justify-end sm:h-[250px] h-[300px] items-center text-center p-5 w-[240px] sm:w-[160px] rounded-[30px]">
       <Image className="sm:w-[100px] hover:scale-110 transition-all ease-linear duration-200 h-auto absolute w-[140px] -top-7" src={`/${src}`} width={2000} height={2000} alt="product"/>
       <div>
         <span className="font-light text-[14px]">Blend</span>
@@ -18,7 +18,7 @@ const Product = ({src,name,price}) => {
 
 const Product2 = ({src,name,price,selected}) => {
   return(
-    <div className={`border hover:bg-white transition-all ease-linear duration-150 md:w-full flex mt-7 md:justify-between sm:h-[auto] md:h-auto relative flex-col justify-end h-[330px] items-center text-center p-5 w-[30%] md:p-3 rounded-[30px]`}>
+    <div className={`border hover:bg-white hover:border-black transition-all ease-linear duration-150 md:w-full flex mt-7 md:justify-between sm:h-[auto] md:h-auto relative flex-col justify-end h-[330px] items-center text-center p-5 w-[30%] md:p-3 rounded-[30px]`}>
       <Image className="md:w-[120px] sm:w-[15vw] xs:w-[25vw] hover:scale-110 transition-all ease-linear md:relative duration-200 h-auto absolute w-[160px] top-0" src={`/${src}`} width={2000} height={2000} alt="product"/>
       <div className="md:w-full md:flex md:flex-col md:justify-center md:gap-2 md:h-full md:text-center">
         <p className="font-light md:text-[4.6vw] text-[21px]">{name}</p>
