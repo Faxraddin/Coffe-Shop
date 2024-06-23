@@ -86,11 +86,11 @@ const HomePage = () => {
       <section className="w-full flex flex-col snap-start lg:h-auto lg:mt-20 h-screen">
         <div className="w-full h-full flex justify-between 2lg:justify-start 2lg:items-start gap-5 2lg:flex-col items-center">
           <Image alt="beans2" src={'/Beans2.png'} width={2000} height={2000} className="h-[70%] sm:w-full sm:mt-10 2lg:h-auto 2lg:w-[50%] relative 2lg:left-0 w-[auto]"/>
-          <div className="flex sm:hidden 2lg:w-full 2lg:text-center 2lg:justify-center justify-center text-left pr-10 flex-col items-center gap-5 h-auto w-[55%]">
-            <h1 className="text-[3.3vw] text-[#371406] md:text-[4vw] font-normal">We care about the quality of our <span className="font-extrabold">products</span></h1>
-            <p className="text-[1.2vw] text-[#371406] md:text-[2vw] font-light">Drinkine cottee is one ef the mest clobel thinas wou de each dows here i can spend a long and comfortable time with this workspace tacilities</p>
-            <Image alt="what" className="w-full 2lg:pl-10 h-auto" width={2000} height={2000} src={'/What.png'}/>
-            <button className="bg-[#371406] md:py-3 transition-all ease-linear duration-300 border sm:ml-10 hover:bg-white hover:border-[#371406] hover:text-[#371406] rounded-[35px] font-bold text-white md:text-[17px] sm:w-[90%] text-[20px] py-5 w-[300px]">Explore our products now!</button>
+          <div className="flex 2lg:w-full 2lg:text-center 2lg:justify-center justify-center text-left pr-10 flex-col items-center gap-5 h-auto w-[55%]">
+            <h1 className="text-[3.3vw] sm:hidden text-[#371406] md:text-[4vw] font-normal">We care about the quality of our <span className="font-extrabold">products</span></h1>
+            <p className="text-[1.2vw] sm:hidden text-[#371406] md:text-[2vw] font-light">Drinkine cottee is one ef the mest clobel thinas wou de each dows here i can spend a long and comfortable time with this workspace tacilities</p>
+            <Image alt="what" className="w-full 2lg:pl-10 sm:pl-5 h-auto" width={2000} height={2000} src={'/What.png'}/>
+            <button className="bg-[#371406] sm:hidden md:py-3 transition-all ease-linear duration-300 border sm:ml-10 hover:bg-white hover:border-[#371406] hover:text-[#371406] rounded-[35px] font-bold text-white md:text-[17px] sm:w-[90%] text-[20px] py-5 w-[300px]">Explore our products now!</button>
           </div>
         </div>
         <Footer/>
