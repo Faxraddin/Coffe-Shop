@@ -17,7 +17,7 @@ const Product = ({src,name,price}) => {
 
 const Product2 = ({src,name,price,selected}) => {
   return(
-    <div className={`border ${selected?'bg-white':''} md:w-full flex mt-7 md:justify-between sm:h-[auto] md:h-auto relative flex-col justify-end h-[330px] items-center text-center p-5 w-[30%] md:p-3 rounded-[30px]`}>
+    <div className={`border hover:bg-white transition-all ease-linear duration-150 md:w-full flex mt-7 md:justify-between sm:h-[auto] md:h-auto relative flex-col justify-end h-[330px] items-center text-center p-5 w-[30%] md:p-3 rounded-[30px]`}>
       <Image className="md:w-[120px] sm:w-[15vw] xs:w-[25vw] hover:scale-110 transition-all ease-linear md:relative duration-200 h-auto absolute w-[160px] top-0" src={`/${src}`} width={2000} height={2000} alt="product"/>
       <div className="md:w-full md:flex md:flex-col md:justify-center md:gap-2 md:h-full md:text-center">
         <p className="font-light md:text-[4.6vw] text-[21px]">{name}</p>
@@ -82,8 +82,16 @@ const HomePage = () => {
         </div>
       </section>
 
-      <section className="w-full flex flex-col snap-start h-screen">
-
+      <section className="w-full flex flex-col snap-start  sm:h-[screen] 2lg:h-auto h-screen">
+        <div className="w-full h-full flex justify-between 2lg:justify-start 2lg:items-start gap-5 2lg:flex-col items-center">
+          <Image alt="beans2" src={'/Beans2.png'} width={2000} height={2000} className="h-[70%] sm:mt-10 2lg:h-auto 2lg:w-[50%] relative 2lg:left-0 w-[auto]"/>
+          <div className="flex 2lg:w-full 2lg:text-center 2lg:justify-center justify-center text-left pr-10 flex-col items-center gap-5 h-auto w-[55%]">
+            <h1 className="text-[3.3vw] text-[#371406] md:text-[4vw] font-normal">We care about the quality of our <span className="font-extrabold">products</span></h1>
+            <p className="text-[1.2vw] text-[#371406] md:text-[2vw] font-light">Drinkine cottee is one ef the mest clobel thinas wou de each dows here i can spend a long and comfortable time with this workspace tacilities</p>
+            <Image alt="what" className="w-full 2lg:pl-10 h-auto" width={2000} height={2000} src={'/What.png'}/>
+            <button className="bg-[#371406] md:py-3 transition-all ease-linear duration-300 border sm:ml-10 hover:bg-white hover:border-[#371406] hover:text-[#371406] rounded-[35px] font-bold text-white md:text-[17px] sm:w-[90%] text-[20px] py-5 w-[300px]">Explore our products now!</button>
+          </div>
+        </div>
       </section>
     </div>
   ); 
