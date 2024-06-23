@@ -31,7 +31,7 @@ const Product2 = ({src,name,price,selected}) => {
 const HomePage = () => {
   return (
     <div className="w-full overflow-x-hidden h-screen overflow-y-scroll snap-y snap-mandatory">
-      <section className="flex snap-start 2lg:h-auto sm:h-screen justify-center 2lg:gap-3 gap-20 flex-col items-center w-full h-screen">
+      <section className="flex snap-start 2lg:h-auto sm:h-auto justify-center 2lg:gap-3 gap-20 flex-col items-center w-full h-screen">
         <Navbar />
         <div className="2lg:flex-col 2lg:text-center w-[90%] relative h-full flex justify-between items-center">
           <div className="h-full 2lg:w-[100%] sm:justify-center sm:gap-7 2lg:items-center big:justify-center flex big:-mt-40 flex-col gap-5 w-[55%]">
@@ -50,7 +50,7 @@ const HomePage = () => {
         </div>
       </section>
 
-      <section className="w-full flex flex-col snap-start h-screen 2lg:h-auto sm:h-scree">
+      <section className="w-full flex flex-col snap-start h-screen 2lg:h-auto sm:h-auto">
         <Image width={2000} height={2000} className="w-[100%] h-auto" alt="Line" src={'/Line.png'} />
         <div className="w-full h-full flex gap-4 justify-center flex-col items-center">
           <Image width={2000} height={2000} className="w-[50px] h-auto" alt="Point" src={'/Point.png'} />
@@ -66,7 +66,7 @@ const HomePage = () => {
           </div>
         </div>
       </section>
-      <section className="w-full flex flex-col snap-start md:h-[auto] h-screen">
+      <section className="w-full flex flex-col snap-start h-auto">
         <div className="w-full h-full flex-col flex justify-between items-center">
           <div className="bg-[#f4e0dd] relative flex mt-14 sm:mt-5 justify-start lg:gap-2 gap-40 items-center lg:p-[5vw] p-10 rounded-[30px] w-[90%] h-[auto]">
             <div className="w-[400px] flex flex-col gap-5">
@@ -83,10 +83,10 @@ const HomePage = () => {
         </div>
       </section>
 
-      <section className="w-full flex flex-col snap-start  sm:h-[screen] 2lg:h-auto h-auto">
+      <section className="w-full flex flex-col snap-start h-auto">
         <div className="w-full h-full flex justify-between 2lg:justify-start 2lg:items-start gap-5 2lg:flex-col items-center">
-          <Image alt="beans2" src={'/Beans2.png'} width={2000} height={2000} className="h-[70%] sm:mt-10 2lg:h-auto 2lg:w-[50%] relative 2lg:left-0 w-[auto]"/>
-          <div className="flex 2lg:w-full 2lg:text-center 2lg:justify-center justify-center text-left pr-10 flex-col items-center gap-5 h-auto w-[55%]">
+          <Image alt="beans2" src={'/Beans2.png'} width={2000} height={2000} className="h-[70%] sm:w-full sm:mt-10 2lg:h-auto 2lg:w-[50%] relative 2lg:left-0 w-[auto]"/>
+          <div className="flex sm:hidden 2lg:w-full 2lg:text-center 2lg:justify-center justify-center text-left pr-10 flex-col items-center gap-5 h-auto w-[55%]">
             <h1 className="text-[3.3vw] text-[#371406] md:text-[4vw] font-normal">We care about the quality of our <span className="font-extrabold">products</span></h1>
             <p className="text-[1.2vw] text-[#371406] md:text-[2vw] font-light">Drinkine cottee is one ef the mest clobel thinas wou de each dows here i can spend a long and comfortable time with this workspace tacilities</p>
             <Image alt="what" className="w-full 2lg:pl-10 h-auto" width={2000} height={2000} src={'/What.png'}/>
