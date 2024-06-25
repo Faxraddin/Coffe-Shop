@@ -22,19 +22,19 @@ const About = () => {
         };
     }, []);
 
-    const calculateTransform = (axis) => {
+    const calculateHorizontalTransform = () => {
         const movementStrength = 50; // movement strength
-        const center = axis === "x" ? window.innerWidth / 2 : window.innerHeight / 2;
-        const offset = axis === "x" ? mousePosition.x : mousePosition.y;
-        return ((offset - center) / center) * movementStrength;
+        const centerX = window.innerWidth / 2;
+        const offsetX = mousePosition.x;
+        return ((offsetX - centerX) / centerX) * movementStrength;
     };
 
     const hand1Transform = {
-        transform: `translate(${calculateTransform("x")}px, ${calculateTransform("y")}px)`,
+        transform: `translateX(${calculateHorizontalTransform()}px)`,
     };
 
     const hand2Transform = {
-        transform: `translate(${calculateTransform("x") * -1}px, ${calculateTransform("y") * -1}px)`,
+        transform: `translateX(${calculateHorizontalTransform() * -1}px)`,
     };
 
     return (
