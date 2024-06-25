@@ -25,9 +25,13 @@ const About = () => {
 
     const calculateHorizontalTransform = () => {
         const movementStrength = 50; // movement strength
-        const centerX = window.innerWidth / 2;
-        const offsetX = mousePosition.x;
-        return ((offsetX - centerX) / centerX) * movementStrength;
+
+        if (typeof window !== "undefined") {
+            const centerX = window.innerWidth / 2;
+            const offsetX = mousePosition.x;
+            return ((offsetX - centerX) / centerX) * movementStrength;
+        }
+        return 0;
     };
 
     const hand1Transform = {
