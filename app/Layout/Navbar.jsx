@@ -7,12 +7,12 @@ const Navbar = () => {
     <header className="w-full h-auto flex justify-center items-center">
       <div className="w-[90%] flex items-center justify-between py-5">
         <div className="flex items-center justify-center gap-3">
-          <Image alt="Logo" src={'/Logo.png'} width={2000} height={2000} className="w-[50px] h-auto" />
+          <Image alt="Logo" src={'/Logo.png'} width={2000} height={2000} className="w-[50px] rounded-full h-auto" />
           <h1 className="text-[30px] font-bold">Coffeo</h1>
         </div>
         <div className="lg:hidden flex text-[16px] justify-center items-center gap-7">
           <Link href={'/'}>Products</Link>
-          <Link href={'/'}>About</Link>
+          <Link href={'/About'}>About</Link>
           <Link href={'/'}>Process</Link>
           <Link href={'/'}>Offers</Link>
         </div>
