@@ -53,7 +53,7 @@ const HomePage = () => {
         </div>
       </section>
 
-      <section className="w-full flex flex-col snap-start h-screen 2lg:h-auto sm:h-auto">
+      <section id="products" className="w-full flex flex-col snap-start h-screen 2lg:h-auto sm:h-auto">
         <Image width={2000} height={2000} className="w-[100%] h-auto pointer-events-none" alt="Line" src={'/Line.png'} />
         <div className="w-full h-full flex gap-4 justify-center flex-col items-center">
           <Image width={2000} height={2000} className="w-[50px] h-auto pointer-events-none" alt="Point" src={'/Point.png'} />

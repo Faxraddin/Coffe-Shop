@@ -18,7 +18,7 @@ const Intro = () => {
 
   return (
     isVisible && (
-      <div className="w-screen flex justify-center items-center fixed z-10 bg-[#A6A6A6] h-screen">
+      <div className="w-screen flex justify-center items-center fixed z-10 bg-[#fbf9f8] h-screen">
         <Image src={'/Intro.gif'} alt='intro' className="w-[400px]" width={300} height={300} />
       </div>
     )

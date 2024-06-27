@@ -43,7 +43,7 @@ const About = () => {
     };
 
     return (
-        <div className="w-full overflow-x-hidden h-screen overflow-y-scroll snap-y snap-mandatory">
+        <div className="w-full fadeIn overflow-x-hidden h-screen overflow-y-scroll snap-y snap-mandatory">
             <section
                 style={{ backgroundImage: 'url("/BG.jpg")', backgroundRepeat: 'no-repeat', backgroundSize: 'cover' }}
                 className="flex overflow-hidden snap-start lg:h-auto sm:h-[65%] justify-center 2lg:gap-3 gap-20 flex-col items-center w-full h-screen">
@@ -60,7 +60,7 @@ const About = () => {
                         <p className="font-light text-[19px] sm:text-[17px]">Welcome to our coffee haven, where passion meets perfection in every sip. At [Your Coffee Website Name], we are dedicated to bringing you the finest coffee beans from the most renowned regions globally. Our commitment to quality begins with our meticulous selection process, ensuring only the best beans make it to your cup. Whether you're a connoisseur or a casual coffee lover, explore our range of blends and single-origin coffees crafted to elevate your coffee experience to new heights. Join us on a journey of flavor, aroma, and uncompromising excellence in every brew.</p>
                     </div>
                     <div className="w-auto lg:w-full h-auto">
-                        <Image src={'/About1.png'} width={2000} height={2000} alt="about1" className="w-auto lg:hidden lg:w-full rounded-[20px] shadow-2xl h-[90%]" />
+                        <Image src={'/About1.png'} width={2000} height={2000} alt="about1" className="w-auto lg:hidden lg:w-full rounded-[20px] shadow-2xl h-[80%]" />
                         <Image src={'/About12.png'} width={2000} height={2000} alt="about12" className="w-auto hidden lg:flex lg:w-full rounded-[20px] shadow-2xl h-[90%]" />
                     </div>
                 </div>
@@ -68,7 +68,7 @@ const About = () => {
             <section className="flex text-[#371406] lg:h-auto snap-start sm:h-auto justify-center 2lg:gap-3 gap-20 flex-col items-center w-full h-screen">
                 <div className="w-[90%] h-full lg:py-20 sm:py-10 lg:gap-10 lg:flex-col-reverse flex lg:justify-center justify-between items-center">
                     <div className="w-auto lg:w-full h-auto">
-                        <Image src={'/About2.png'} width={2000} height={2000} alt="about2" className="w-auto lg:hidden lg:w-full rounded-[20px] shadow-2xl h-[90%]" />
+                        <Image src={'/About2.png'} width={2000} height={2000} alt="about2" className="w-auto lg:hidden lg:w-full rounded-[20px] shadow-2xl h-[80%]" />
                         <Image src={'/About22.png'} width={2000} height={2000} alt="about22" className="w-auto hidden lg:flex lg:w-full rounded-[20px] shadow-2xl h-[90%]" />
                     </div>
                     <div className="flex lg:w-full w-[40%] sm:gap-5 flex-col gap-10">
@@ -84,7 +84,7 @@ const About = () => {
                         <p className="font-light text-[19px] sm:text-[17px]">Ethical coffee matters not just for the sake of sustainability and fairness, but because it embodies our commitment to a better world—one cup at a time. At [Your Coffee Website Name], we believe in the power of ethical sourcing to elevate the entire coffee experience. By supporting farmers who prioritize environmental stewardship and fair labor practices, we ensure that each bean in your pour-over brew is imbued with integrity and care. Join us in celebrating coffee that not only delights the senses but also honors the communities and ecosystems from which it originates. Together, let's brew a future where every sip tells a story of conscientiousness and quality.</p>
                     </div>
                     <div className="w-auto lg:w-full h-auto">
-                        <Image src={'/About3.png'} width={2000} height={2000} alt="about3" className="w-auto lg:hidden lg:w-full rounded-[20px] shadow-2xl h-[90%]" />
+                        <Image src={'/About3.png'} width={2000} height={2000} alt="about3" className="w-auto lg:hidden lg:w-full rounded-[20px] shadow-2xl h-[80%]" />
                         <Image src={'/About32.png'} width={2000} height={2000} alt="about32" className="w-auto hidden lg:flex lg:w-full rounded-[20px] shadow-2xl h-[90%]" />
                     </div>
                 </div>
