@@ -53,7 +53,7 @@ const About = () => {
                     <Image style={hand2Transform} className="w-auto xs:right-9 relative top-4 h-full" src={'/Hand2.png'} alt="hand2" width={2000} height={2000} />
                 </div>
             </section>
-            <section className="flex text-[#371406] lg:h-auto snap-start sm:h-auto justify-center 2lg:gap-3 gap-20 flex-col items-center w-full h-screen">
+            <section className="flex text-[#371406] sm:pb-10 lg:h-auto snap-start sm:h-auto justify-center 2lg:gap-3 gap-20 flex-col items-center w-full h-screen">
                 <div className="w-[90%] h-full lg:py-20 sm:py-10 lg:gap-10 lg:flex-col flex lg:justify-center justify-between items-center">
                     <div className="flex lg:w-full w-[40%] sm:gap-5 flex-col gap-10">
                         <h1 className="font-bold text-[40px] sm:text-[30px]">Truly Great Coffee</h1>
@@ -65,7 +65,7 @@ const About = () => {
                     </div>
                 </div>
             </section>
-            <section className="flex text-[#371406] lg:h-auto snap-start sm:h-auto justify-center 2lg:gap-3 gap-20 flex-col items-center w-full h-screen">
+            <section className="flex text-[#371406] sm:pb-10 lg:h-auto snap-start sm:h-auto justify-center 2lg:gap-3 gap-20 flex-col items-center w-full h-screen">
                 <div className="w-[90%] h-full lg:py-20 sm:py-10 lg:gap-10 lg:flex-col-reverse flex lg:justify-center justify-between items-center">
                     <div className="w-auto lg:w-full h-auto">
                         <Image src={'/About2.png'} width={2000} height={2000} alt="about2" className="w-auto lg:hidden lg:w-full rounded-[20px] shadow-2xl h-[80%]" />
@@ -77,7 +77,7 @@ const About = () => {
                     </div>
                 </div>
             </section>
-            <section className="flex text-[#371406] lg:h-auto snap-start sm:h-auto justify-center 2lg:gap-3 gap-20 flex-col items-center w-full h-screen">
+            <section className="flex text-[#371406] sm:pb-10 lg:h-auto snap-start sm:h-auto justify-center 2lg:gap-3 gap-20 flex-col items-center w-full h-screen">
                 <div className="w-[90%] h-full lg:py-20 sm:py-10 lg:gap-10 lg:flex-col flex lg:justify-center justify-between items-center">
                     <div className="flex lg:w-full w-[40%] sm:gap-5 flex-col gap-10">
                         <h1 className="font-bold text-[40px] sm:text-[30px]">Why Ethical Coffee Matters</h1>
@@ -89,7 +89,7 @@ const About = () => {
                     </div>
                 </div>
             </section>
-            <section className="w-full flex flex-col snap-start lg:h-auto lg:mt-20 h-auto">
+            <section className="w-full flex sm:pb-20 flex-col snap-start lg:h-auto lg:mt-20 h-auto">
                 <Footer/>
             </section>
         </div>

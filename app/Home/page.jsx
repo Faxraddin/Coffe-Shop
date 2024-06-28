@@ -53,7 +53,7 @@ const HomePage = () => {
         </div>
       </section>
 
-      <section id="products" className="w-full sm:pb-20 flex flex-col snap-start h-screen 2lg:h-auto sm:h-auto">
+      <section id="products" className="w-full sm:pb-24 flex flex-col snap-center h-screen 2lg:h-auto sm:h-auto">
         <Image width={2000} height={2000} className="w-[100%] sm:h-[100px] sm:w-[100vw] sm:object-cover h-auto pointer-events-none" alt="Line" src={'/Line.png'} />
         <div className="w-full h-full flex gap-4 justify-center flex-col items-center">
           <Image width={2000} height={2000} className="w-[50px] h-auto pointer-events-none" alt="Point" src={'/Point.png'} />
@@ -69,7 +69,7 @@ const HomePage = () => {
           </div>
         </div>
       </section>
-      <section className="w-full sm:pb-20 flex flex-col snap-start h-screen md:h-auto">
+      <section className="w-full sm:pb-24 flex flex-col snap-start h-screen md:h-auto">
         <div className="w-full h-full flex-col flex justify-between items-center">
           <div className="bg-[#f4e0dd] relative flex mt-14 sm:mt-5 justify-start lg:gap-2 gap-40 items-center lg:p-[5vw] p-10 rounded-[30px] w-[90%] h-[auto]">
             <div className="w-[400px] flex flex-col gap-5">
