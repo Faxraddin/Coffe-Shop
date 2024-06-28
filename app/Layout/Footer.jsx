@@ -2,10 +2,6 @@
 import React from "react";
 import Image from "next/image";
 
-import { AiFillInstagram } from "react-icons/ai";
-import { FaFacebook, FaLinkedin } from "react-icons/fa";
-import { IoLogoWhatsapp } from "react-icons/io";
-
 const Footer = () => {
   return (
     <footer className="lg:mx-5 Font lg:mb-5 mb-10 mx-10">

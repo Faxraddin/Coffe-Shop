@@ -36,8 +36,8 @@ const Navbar = () => {
         </div>
         <button className="lg:hidden rounded-[40px] text-[16px] transition-all ease-linear duration-300 border hover:bg-white hover:border-[#723d29] hover:text-[#723d29] bg-[#723d29] p-4 text-white">Get Started Now!</button>
 
-        <input id="checkbox" type="checkbox" />
-        <label onClick={handleClick} className="toggle z-[100]" for="checkbox">
+        <input id="checkbox" className="" type="checkbox" />
+        <label onClick={handleClick} className="toggle hidden lg:flex z-[100]" for="checkbox">
           <div id="bar1" class="bars"></div>
           <div id="bar2" class="bars"></div>
           <div id="bar3" class="bars"></div>
