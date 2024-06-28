@@ -89,7 +89,7 @@ const About = () => {
                     </div>
                 </div>
             </section>
-            <section className="w-full flex sm:pb-20 flex-col snap-start lg:h-auto lg:mt-20 h-auto">
+            <section className="w-full flex sm:pb-20 flex-col snap-start lg:h-auto sm:mt-0 lg:mt-20 h-auto">
                 <Footer/>
             </section>
         </div>
