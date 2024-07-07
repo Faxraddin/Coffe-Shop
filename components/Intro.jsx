@@ -19,7 +19,7 @@ const Intro = () => {
   return (
     isVisible && (
       <div className="w-screen flex justify-center items-center fixed z-10 bg-[#fbf9f8] h-screen">
-        <Image src={'/Intro.gif'} alt='intro' className="w-[400px]" width={300} height={300} />
+        <Image src={'/Intro.gif'} alt='intro' className="w-[400px] big:w-[30vw]" width={300} height={300} />
       </div>
     )
   );
